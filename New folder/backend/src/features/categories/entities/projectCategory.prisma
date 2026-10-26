@@ -1,9 +1,0 @@
-model ProjectCategory {
-  id           Int       @id @default(autoincrement())
-  name         String    @unique
-  displayOrder Int
-  createdAt    DateTime  @default(now())
-  updatedAt    DateTime  @updatedAt
-
-  projects Project[]
-}

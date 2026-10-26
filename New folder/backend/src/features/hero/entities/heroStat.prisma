@@ -1,9 +1,0 @@
-model HeroStat {
-  id           Int    @id @default(autoincrement())
-  label        String
-  value        String
-  displayOrder Int
-  heroId       Int
-
-  hero Hero @relation(fields: [heroId], references: [id], onDelete: Cascade)
-}
