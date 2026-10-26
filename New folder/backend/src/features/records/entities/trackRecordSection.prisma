@@ -1,0 +1,10 @@
+model TrackRecordSection {
+  id          Int                @id @default(1)
+  badge       String
+  title       String
+  description String
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+
+  stats TrackRecordStat[]
+}

@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-orange: #e8520a;
+  --color-orange-dark: #cf480a;
+  --color-navy: #1b2b4b;
+  --color-navy-light: #243554;
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Harmonize dashboard amber utility classes to Constructify orange */
+  --color-amber-50: #fff7ed;
+  --color-amber-100: #ffedd5;
+  --color-amber-200: #fed7aa;
+  --color-amber-400: #fb923c;
+  --color-amber-500: #e8520a;
+  --color-amber-600: #cf480a;
+  --color-amber-700: #c2410c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

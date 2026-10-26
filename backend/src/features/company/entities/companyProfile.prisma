@@ -1,0 +1,10 @@
+model CompanyProfile {
+  id          Int      @id @default(1)
+  companyName String
+  logoUrl     String
+  logoFileId  String
+  phoneNumber String
+  email       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

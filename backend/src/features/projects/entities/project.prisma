@@ -1,0 +1,14 @@
+model Project {
+  id                Int             @id @default(autoincrement())
+  title             String
+  description       String
+  imageUrl          String
+  imageId           String
+  displayOrder      Int
+  isActive          Boolean         @default(true)
+  projectCategoryId Int
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+
+  category ProjectCategory @relation(fields: [projectCategoryId], references: [id], onDelete: Restrict)
+}
